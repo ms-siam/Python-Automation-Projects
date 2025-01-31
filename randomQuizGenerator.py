@@ -33,8 +33,8 @@ for NumOfQuiz in range(35):
     quizFile.write((' ' * 20) + f'State Capitals Quiz (Form{NumOfQuiz + 1})')
     quizFile.write('\n\n')
     
-    #TODO: Write out the header for the quiz.
-    
-    #TODO: Shuffle the order of the states.
+    #Shuffle the order of the states.
+    states = list(capitals.keys())
+    random.shuffle(states)
     
     #TODO: Loop through all 50 states, making a question for each.
