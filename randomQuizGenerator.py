@@ -57,4 +57,5 @@ for NumOfQuiz in range(35):
         #Write the answer key to a file.
         answerFile.write(f"{NumOfQues + 1}. {'ABCD'[answerChoices.index(trueAnswer)]}")
         
-    
+    quizFile.close()
+    answerFile.close()
