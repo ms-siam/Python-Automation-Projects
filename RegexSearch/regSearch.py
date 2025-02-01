@@ -17,7 +17,8 @@ dirPath =Path(input("Enter the directory path where .txt files are stored: "))
 txtfiles = gb.glob(f"{dirPath}/{regex}.txt")
 
 #For each .txt file in the folder
-
+for textfile in txtfiles:
+    with open(textfile) as file:
     #Open the file for reading
     
     #Read the file line by line
