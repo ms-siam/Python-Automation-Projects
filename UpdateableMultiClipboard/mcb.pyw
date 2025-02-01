@@ -6,4 +6,10 @@
 
 import pyperclip, shelve, sys
 
-mcbShelf = shelve.open('mcb')
+with shelve.open('mcb') as mcbShelf:
+
+      #Todo: Save clipboard content.
+      
+      
+      #Todo: List keywords and load content.
+      
