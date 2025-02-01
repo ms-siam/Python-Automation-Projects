@@ -24,11 +24,14 @@ for textfile in txtfiles:
         
         #Read the file line by line
         file.readlines()
-    
-    
-    
-    
     #For each line in the file
+        for line in file:
+            if regex in line:
+                print(line)
+                print(textfile)
+            
+    
+    
     
         #Search for the supplied regex in the line
         
