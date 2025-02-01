@@ -8,9 +8,10 @@ from pathlib import Path
 import re
 
 #Asking user to input the regex to search for
-
+regex = input("Enter the regex to search for: ")
 
 #Asking the user to input the directory path where .txt files are stored
+dirPath =Path(input("Enter the directory path where .txt files are stored: "))
 
 #Get all .txt file in the specified dir
 
