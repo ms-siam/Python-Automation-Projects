@@ -18,7 +18,9 @@ with shelve.open('mcb') as mcbShelf:
         elif sys.argv[1] in mcbShelf:
             pyperclip.copy(mcbShelf[sys.argv[1]])
     
-    
+    #Delete a keyword.
+    elif len(sys.argv) == 3 and sys.argv[1].lower() == 'delete':
+        del mcbShelf[sys.argv[2]]
     
     
     
