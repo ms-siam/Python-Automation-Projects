@@ -6,6 +6,7 @@
 
 from pathlib import Path
 import glob as gb
+import re
 
 #Asking user to input the regex to search for
 regex = input("Enter the regex to search for: ")
