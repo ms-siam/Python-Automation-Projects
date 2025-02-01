@@ -23,9 +23,9 @@ for textfile in txtfiles:
     with open(textfile) as file:
         
         #Read the file line by line
-        file.readlines()
+        lineInFile = file.readlines()
     #For each line in the file
-        for line in file:
+        for line in lineInFile:
             #Search for the supplied regex in the line
             if regex in line:
                 #If the regex is found'
