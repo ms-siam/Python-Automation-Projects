@@ -19,7 +19,7 @@ txtfiles = gb.glob(f"{dirPath}/*.txt")
 
 #For each .txt file in the folder
 for textfile in txtfiles:
-    
+    found_match = False
     #Open the file for reading
     with open(textfile) as file:
         
@@ -27,12 +27,12 @@ for textfile in txtfiles:
         lineInFile = file.readlines()
     #For each line in the file
         for line in lineInFile:
-            found_match = False
+            
             #Search for the supplied regex in the line
             if re.search(regex, line):
                 #If the regex is found'
-                #Print the line that contains the regex
-                print(line)
+                #Assign the line that contains the regex
+                matchedLine = line
                 found_match = True
         if found_match:
             #Print the name of the file that contains the regex
