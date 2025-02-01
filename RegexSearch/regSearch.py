@@ -34,8 +34,8 @@ for textfile in txtfiles:
                 #Print the line that contains the regex
                 print(line)
                 found_match = True
-            if found_match:
-                #Print the name of the file that contains the regex
-                print(textfile)
+        if found_match:
+            #Print the name of the file that contains the regex
+            print(textfile)
                 
 
