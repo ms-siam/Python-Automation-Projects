@@ -27,7 +27,7 @@ for textfile in txtfiles:
     #For each line in the file
         for line in lineInFile:
             #Search for the supplied regex in the line
-            if regex in line:
+            if re.search(regex, line):
                 #If the regex is found'
                 #Print the line that contains the regex
                 print(line)
