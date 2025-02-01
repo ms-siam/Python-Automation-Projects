@@ -18,8 +18,9 @@ txtfiles = dirPath.glob("*.txt")
 
 #For each .txt file in the folder
 for textfile in txtfiles:
-    found_match = False
-    matchedLines = []
+    found_match = False      #Flag to check if the regex is found in the file
+    matchedLines = []        #List to store the lines that contain the regex
+    
     #Open the file for reading
     with open(textfile) as file:
         
@@ -30,15 +31,18 @@ for textfile in txtfiles:
             #Search for the supplied regex in the line
             if re.search(regex, line):
                 #If the regex is found'
-                #Assign the line that contains the regex
+                #Append the line that contains the regex into the list
                 matchedLines.append(line.strip())
-                found_match = True
+                
+                found_match = True    #Set the flag to True
+                
         if found_match:
             #Print the name of the file that contains the regex
-            print(textfile)
+            print(f"The file that contains below matches- {textfile}")
             #Print the line that contains the regex
-            for L in matchedLines:
-                print(L)
+            for i,L in enumerate(matchedLines):
+                n = i+1
+                print(f"{n}. {L}")
             print("\n")
                 
 
