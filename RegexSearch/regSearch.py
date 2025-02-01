@@ -31,7 +31,7 @@ for textfile in txtfiles:
             if re.search(regex, line):
                 #If the regex is found'
                 #Assign the line that contains the regex
-                matchedLines.append(line)
+                matchedLines.append(line.strip())
                 found_match = True
         if found_match:
             #Print the name of the file that contains the regex
