@@ -36,16 +36,15 @@ for textfile in txtfiles:
                 
                 found_match = True    #Set the flag to True
                 
-            else:
-                print(f"No match found in {textfile}")
-                
         if found_match:
             #Print the name of the file that contains the regex
             print(f"The file that contains below matches- {textfile}")
             #Print the line that contains the regex
             for i,L in enumerate(matchedLines):
-                n = i+1
-                print(f"{n}. {L}")
+                print(f"{i + 1} . {L}")
             print("\n")
+            
+        else:
+                print(f"No match found in {textfile}")
                 
 
