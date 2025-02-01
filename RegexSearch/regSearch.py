@@ -5,7 +5,6 @@
 
 
 from pathlib import Path
-import glob as gb
 import re
 
 #Asking user to input the regex to search for
@@ -15,11 +14,12 @@ regex = input("Enter the regex to search for: ")
 dirPath =Path(input("Enter the directory path where .txt files are stored: "))
 
 #Get all .txt file in the specified dir
-txtfiles = gb.glob(f"{dirPath}/*.txt")
+txtfiles = dirPath.glob("*.txt")
 
 #For each .txt file in the folder
 for textfile in txtfiles:
     found_match = False
+    matchedLine = ""
     #Open the file for reading
     with open(textfile) as file:
         
@@ -27,15 +27,16 @@ for textfile in txtfiles:
         lineInFile = file.readlines()
     #For each line in the file
         for line in lineInFile:
-            
             #Search for the supplied regex in the line
             if re.search(regex, line):
                 #If the regex is found'
                 #Assign the line that contains the regex
-                matchedLine = line
+                matchedLine.appened(line)
                 found_match = True
         if found_match:
             #Print the name of the file that contains the regex
             print(textfile)
+            #Print the line that contains the regex
+            print(matchedLine)
                 
 
