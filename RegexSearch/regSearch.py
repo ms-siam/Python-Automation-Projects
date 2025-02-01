@@ -14,7 +14,7 @@ regex = input("Enter the regex to search for: ")
 dirPath =Path(input("Enter the directory path where .txt files are stored: "))
 
 #Get all .txt file in the specified dir
-txtfiles = gb.glob(f"{dirPath}/*.txt")
+txtfiles = gb.glob(f"{dirPath}/{regex}.txt")
 
 #For each .txt file in the folder
 
