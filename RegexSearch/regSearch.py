@@ -20,7 +20,7 @@ txtfiles = gb.glob(f"{dirPath}/*.txt")
 for textfile in txtfiles:
     #Open the file for reading
     with open(textfile) as file:
-        file.read_text()
+        file.readlines()
     
     
     #Read the file line by line
