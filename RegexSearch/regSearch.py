@@ -19,7 +19,7 @@ txtfiles = dirPath.glob("*.txt")
 #For each .txt file in the folder
 for textfile in txtfiles:
     found_match = False
-    matchedLine = []
+    matchedLines = []
     #Open the file for reading
     with open(textfile) as file:
         
@@ -31,13 +31,13 @@ for textfile in txtfiles:
             if re.search(regex, line):
                 #If the regex is found'
                 #Assign the line that contains the regex
-                matchedLine.append(line)
+                matchedLines.append(line)
                 found_match = True
         if found_match:
             #Print the name of the file that contains the regex
             print(textfile)
             #Print the line that contains the regex
-            for L in matchedLine:
+            for L in matchedLines:
                 print(L)
             print("\n")
                 
