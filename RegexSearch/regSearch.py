@@ -5,7 +5,7 @@
 
 
 from pathlib import Path
-import re
+import glob as gb
 
 #Asking user to input the regex to search for
 regex = input("Enter the regex to search for: ")
