@@ -14,12 +14,14 @@ regex = input("Enter the regex to search for: ")
 dirPath =Path(input("Enter the directory path where .txt files are stored: "))
 
 #Get all .txt file in the specified dir
-txtfiles = gb.glob(f"{dirPath}/{regex}.txt")
+txtfiles = gb.glob(f"{dirPath}/*.txt")
 
 #For each .txt file in the folder
 for textfile in txtfiles:
-    with open(textfile) as file:
     #Open the file for reading
+    with open(textfile) as file:
+        file.read_text()
+    
     
     #Read the file line by line
     
