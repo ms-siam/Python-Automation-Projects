@@ -36,6 +36,9 @@ for textfile in txtfiles:
                 
                 found_match = True    #Set the flag to True
                 
+            else:
+                print(f"No match found in {textfile}")
+                
         if found_match:
             #Print the name of the file that contains the regex
             print(f"The file that contains below matches- {textfile}")
