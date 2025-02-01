@@ -40,8 +40,8 @@ for textfile in txtfiles:
             #Print the name of the file that contains the regex
             print(f"The file that contains below matches- {textfile}")
             #Print the line that contains the regex
-            for i,L in enumerate(matchedLines):
-                print(f"{i + 1} . {L}")
+            for i,L in enumerate(matchedLines, 1):   # Start enumeration at 1
+                print(f"{i} . {L}")
             print("\n")
             
         else:
