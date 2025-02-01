@@ -33,12 +33,4 @@ for textfile in txtfiles:
                 print(line)
                  #Print the file name
                 print(textfile)
-            
-    
-    
-    
-       
-            
-           
-            
-#close each file after processing
+
