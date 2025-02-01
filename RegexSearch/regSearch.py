@@ -26,19 +26,19 @@ for textfile in txtfiles:
         file.readlines()
     #For each line in the file
         for line in file:
+            #Search for the supplied regex in the line
             if regex in line:
+                #If the regex is found'
+                #Print the line that contains the regex
                 print(line)
+                 #Print the file name
                 print(textfile)
             
     
     
     
-        #Search for the supplied regex in the line
-        
-        #If the regex is found'
-        
-            #Print the line that contains the regex
+       
             
-            #Print the file name
+           
             
 #close each file after processing
