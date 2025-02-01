@@ -18,12 +18,15 @@ txtfiles = gb.glob(f"{dirPath}/*.txt")
 
 #For each .txt file in the folder
 for textfile in txtfiles:
+    
     #Open the file for reading
     with open(textfile) as file:
+        
+        #Read the file line by line
         file.readlines()
     
     
-    #Read the file line by line
+    
     
     #For each line in the file
     
