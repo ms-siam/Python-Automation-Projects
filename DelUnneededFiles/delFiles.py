@@ -3,7 +3,8 @@
 # searches for exceptionally large files or folders ,
 # printing those files with their absolute path 
 
-import shutil, os
+import os
+import send2trash
 from pathlib import Path
 
 source = Path('F:\\STUDY')
@@ -21,6 +22,8 @@ def delunneededfiles(source):
             if file_size > largesize:
                 largefiles.append(file_path)
                 largefilessize.append(file_size)
+                send2trash.send2trash(file_path)
+                
     
 delunneededfiles(source)
 totalsize = 0
