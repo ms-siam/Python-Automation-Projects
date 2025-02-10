@@ -29,10 +29,10 @@ for amerFilename in os.listdir('.'):
     yearPart = mo.group(6)
     afterPart = mo.group(8)
 
-# ToDo- Form the European Style Filename
+    # Form the European Style Filename
+    euroFilename = beforePart + dayPart + '-' + monthPart + '-' + yearPart + afterPart
+    
+    # Get the Full , absolute path
+    
 
-
-# ToDo- Get the Full , absolute path
-
-
-# ToDo- Rename the Files
+    # ToDo- Rename the Files
