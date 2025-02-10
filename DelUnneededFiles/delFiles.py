@@ -13,7 +13,7 @@ largefilessize = []
 def delunneededfiles(source):
     
     #Walking through the source folder tree
-    for foldername, subsolders, filenames in os.walk(source):
+    for foldername, subfolders, filenames in os.walk(source):
         for file in filenames:
             file_size = os.path.getsize(os.path.join(foldername, file))
             file_path = os.path.join(foldername, file)
