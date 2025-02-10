@@ -28,4 +28,5 @@ for largefile, largefilesize in zip(largefiles, largefilessize):
         print(f'{largefile}- {largefilesize}')
         totalsize = totalsize + int(largefilesize)
 totalsizeinmb = totalsize / 1000000
-print(f' Total size in MB {totalsizeinmb}')
+totalsizeingb = totalsizeinmb / 1024
+print(f' Total size in GB {totalsizeingb}')
