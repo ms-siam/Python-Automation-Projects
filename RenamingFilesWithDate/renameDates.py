@@ -12,7 +12,9 @@ datePattern = re.compile(r"""^(.*?)
                          ((20|25)\d\d)
                          (.*?)$
                          """, re.VERBOSE)
+
 # ToDo- Loop Over the Files in the working directory 
+
 
 
 # ToDo- skip files without a date
