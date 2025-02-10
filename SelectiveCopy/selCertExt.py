@@ -3,7 +3,7 @@
 # file extension like '.py', '.jpg' etc and copy them to a new folder 
 
 import shutil, re, os
-
+from pathlib import Path
 # Walking through the folder tree
 source = Path('C:\\Users\\Mobarok Siam\\Desktop')
 
