@@ -4,7 +4,6 @@
 # printing those files with their absolute path 
 
 import os
-import send2trash
 from pathlib import Path
 
 source = Path('F:\\STUDY')
@@ -22,7 +21,7 @@ def delunneededfiles(source):
             if file_size > largesize:
                 largefiles.append(file_path)
                 largefilessize.append(file_size)
-                send2trash.send2trash(file_path)
+                os.unlink(file_path)
                 
     
 delunneededfiles(source)
