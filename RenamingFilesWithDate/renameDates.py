@@ -37,4 +37,5 @@ for amerFilename in os.listdir('.'):
     amerFilename = os.path.join(absWorkingDir, amerFilename)
     euroFilename = os.path.join(absWorkingDir, euroFilename)
 
-    # ToDo- Rename the Files
+    # Rename the Files
+    
