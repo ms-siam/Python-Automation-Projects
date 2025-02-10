@@ -13,14 +13,16 @@ fileno = 0
 files = []
 largefiles = []
 largefilesize = []
-def delunneededfiles(source, size):
+def delunneededfiles(source):
     
     #Walking through the source folder tree
     for foldername, subsolders, filenames in os.walk(source):
         for file in filenames:
             size.append(os.path.getsize(file))
-            files.append(file)
+            files.append(os.path.abspath(file))
             fileno = fileno + 1
         if int(size[fileno]) > largesize:
             largefiles.append(files[fileno])
             largefilesize.append(size[fileno])
+for i in largefiles:
+    print(f'')
