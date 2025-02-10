@@ -17,7 +17,7 @@ def delunneededfiles(source):
         for file in filenames:
             file_size = os.path.getsize(os.path.join(foldername, file))
             file_path = os.path.join(foldername, file)
-            fileno = fileno + 1
+            
             if int(size[fileno]) > largesize:
                 largefiles.append(files[fileno])
                 largefilessize.append(size[fileno])
