@@ -5,16 +5,22 @@
 import shutil, re, os
 from pathlib import Path
 
-# Walking through the folder tree
+
 source = Path('C:\\Users\\Mobarok Siam\\Desktop')
 extension = '.jpg'
 destination = (source / extension.lstrip('.'))
 destination.mkdir(exist_ok=True)
 
 def selandcopyfiles(source, destination, ext):
-    
+    # Walking through the folder tree
+    for foldername, subfolders, filenames in os.walk(source):
+        # Searching for a certain file extension
+        for filename in filenames:
+            if not filename.endswith(ext):
+                continue
+            shutil.copy(Path(foldername) / filename, destination/filename)
 
-# Searching for a certain file extension
+
 
 
 # Copy them to a new folder
