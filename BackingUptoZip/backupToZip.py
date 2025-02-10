@@ -27,6 +27,12 @@ def backupToZip(folder):
         print(f'Adding the files in {foldername}...')
         #Add the current folder to the ZIP file.
         backupZip.write(foldername)
+        
+        # Add all the files in this folder to the ZIP FIle.
+        for filename in filenames:
+            newBase = os.path.basename(folder) + '_'
+            if filename.startswith(newBase) and filename.endswith('.zip'):
+                continue
     print('Done')
     
 backupToZip('C:\\delicious')
