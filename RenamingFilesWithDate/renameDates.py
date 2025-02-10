@@ -6,7 +6,12 @@ import shutil, os, re
 
 #Create a regex that matches files with the American date format
 
-
+datePattern = re.compile(r"""^(.*?)
+                         ((0|1)?\d)-
+                         ((0|1|2|3)?\d)-
+                         ((20|25)\d\d)
+                         (.*?)$
+                         """, re.VERBOSE)
 # ToDo- Loop Over the Files in the working directory 
 
 
