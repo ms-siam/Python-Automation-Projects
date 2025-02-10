@@ -34,6 +34,6 @@ for amerFilename in os.listdir('.'):
     
     # Get the Full , absolute path
     absWorkingDir = os.path.abspath('.')
-    
+    amerFilename = os.path.join(absWorkingDir, amerFilename)
 
     # ToDo- Rename the Files
