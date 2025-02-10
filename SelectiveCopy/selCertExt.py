@@ -8,6 +8,7 @@ from pathlib import Path
 # Walking through the folder tree
 source = Path('C:\\Users\\Mobarok Siam\\Desktop')
 extension = '.jpg'
+destination = (source / extension.split('.'))
 def selandcopyfiles(source, destination, ext):
     
 
