@@ -17,9 +17,11 @@ datePattern = re.compile(r"""^(.*?)
 
 for amerFilename in os.listdir('.'):
     mo = datePattern.search(amerFilename)
-
-# ToDo- skip files without a date
-
+    
+    #skip files without a date
+    if mo == None:
+        continue
+    
 
 # ToDo- Get the different part of the filename
 
