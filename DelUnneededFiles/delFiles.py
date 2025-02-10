@@ -10,6 +10,7 @@ source = Path('F:\\STUDY')
 size = []
 largesize = 524,288,000
 fileno = 0
+files = []
 def delunneededfiles(source, size):
     
     #Walking through the source folder tree
@@ -17,4 +18,5 @@ def delunneededfiles(source, size):
         for file in filenames:
             size.append(os.path.getsize(file))
     if int(size[fileno]) > largesize:
+        
 
