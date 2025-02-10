@@ -4,3 +4,5 @@
 
 import zipfile, os
 
+def backupToZip(folder):
+    
