@@ -21,7 +21,7 @@ def delunneededfiles(source):
             if file_size > largesize:
                 largefiles.append(file_path)
                 largefilessize.append(file_size)
-                os.unlink(file_path)
+                #os.unlink(file_path)
                 
     
 delunneededfiles(source)
