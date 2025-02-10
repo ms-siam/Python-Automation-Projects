@@ -8,3 +8,7 @@ from pathlib import Path
 
 source = Path('F:\\STUDY')
 size = 0
+
+def delunneededfiles(source, size):
+    
+
