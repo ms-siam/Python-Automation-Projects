@@ -7,10 +7,7 @@ import shutil, os
 from pathlib import Path
 
 source = Path('F:\\STUDY')
-size = []
 largesize = 524288000
-fileno = 0
-files = []
 largefiles = []
 largefilessize = []
 def delunneededfiles(source):
