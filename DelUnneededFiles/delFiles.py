@@ -12,7 +12,7 @@ largesize = 524,288,000
 fileno = 0
 files = []
 largefiles = []
-largefilesize = []
+largefilessize = []
 def delunneededfiles(source):
     
     #Walking through the source folder tree
@@ -23,6 +23,6 @@ def delunneededfiles(source):
             fileno = fileno + 1
         if int(size[fileno]) > largesize:
             largefiles.append(files[fileno])
-            largefilesize.append(size[fileno])
-for i in largefiles:
-    print(f'')
+            largefilessize.append(size[fileno])
+for largefile, largefilesize in largefiles, largefilessize:
+    print(f'{largefile}- {largefilesize}')
