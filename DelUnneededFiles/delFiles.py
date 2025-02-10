@@ -7,3 +7,4 @@ import shutil, os
 from pathlib import Path
 
 source = Path('F:\\STUDY')
+size = 0
