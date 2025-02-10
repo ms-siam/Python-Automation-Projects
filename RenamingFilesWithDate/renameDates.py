@@ -33,6 +33,7 @@ for amerFilename in os.listdir('.'):
     euroFilename = beforePart + dayPart + '-' + monthPart + '-' + yearPart + afterPart
     
     # Get the Full , absolute path
+    absWorkingDir = os.path.abspath('.')
     
 
     # ToDo- Rename the Files
