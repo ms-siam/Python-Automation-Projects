@@ -15,7 +15,8 @@ datePattern = re.compile(r"""^(.*?)
 
 # ToDo- Loop Over the Files in the working directory 
 
-
+for amerFilename in os.listdir('.'):
+    mo = datePattern.search(amerFilename)
 
 # ToDo- skip files without a date
 
