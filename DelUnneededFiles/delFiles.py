@@ -23,6 +23,9 @@ def delunneededfiles(source):
                 largefilessize.append(file_size)
     
 delunneededfiles(source)
-
+totalsize = 0
 for largefile, largefilesize in zip(largefiles, largefilessize):
         print(f'{largefile}- {largefilesize}')
+        totalsize = totalsize + int(largefilesize)
+totalsizeinmb = totalsize / 1000000
+print(f' Total size in MB {totalsizeinmb}')
