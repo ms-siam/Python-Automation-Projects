@@ -18,9 +18,9 @@ def selandcopyfiles(source, destination, ext):
         for filename in filenames:
             if not filename.endswith(ext):
                 continue
+            # Copy them to a new folder
             shutil.copy(Path(foldername) / filename, destination/filename)
 
 
 
 
-# Copy them to a new folder
