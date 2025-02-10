@@ -16,5 +16,5 @@ def delunneededfiles(source, size):
     for foldername, subsolders, filenames in os.walk(source):
         for file in filenames:
             size.append(os.path.getsize(file))
-    
+    if int(size[fileno]) > largesize:
 
