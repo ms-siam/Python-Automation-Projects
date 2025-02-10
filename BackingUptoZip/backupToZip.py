@@ -17,3 +17,10 @@ def backupToZip(folder):
         if not os.path.exists(zipFilename):
             break
         number = number+1
+        
+    # Create the ZIP file
+    
+    
+    # Walk the intire folder tree and compress the files in each folder
+    
+    
