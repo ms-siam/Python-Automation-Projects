@@ -22,9 +22,12 @@ for amerFilename in os.listdir('.'):
     if mo == None:
         continue
     
-
-# ToDo- Get the different part of the filename
-
+    #Get the different part of the filename
+    beforePart = mo.group(1)
+    monthPart = mo.group(2)
+    dayPart = mo.group(4)
+    yearPart = mo.group(6)
+    afterPart = mo.group(8)
 
 # ToDo- Form the European Style Filename
 
