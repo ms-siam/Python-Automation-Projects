@@ -23,7 +23,9 @@ def backupToZip(folder):
     backupZip = zipfile.ZipFile(zipFilename, 'w')
     
     # Walk the intire folder tree and compress the files in each folder
-    
+    for foldername, subfolders, filenames in os.walk(folder):
+        print(f'Adding the files in {foldername}...')
+        
     print('Done')
     
 backupToZip('C:\\delicious')
