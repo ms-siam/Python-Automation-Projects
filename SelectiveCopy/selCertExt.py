@@ -5,7 +5,8 @@
 import shutil, re, os
 
 # Walking through the folder tree
-
+def selandcopyfiles(source, destination, ext):
+    
 
 # Searching for a certain file extension
 
