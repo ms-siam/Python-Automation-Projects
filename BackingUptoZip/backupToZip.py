@@ -24,3 +24,5 @@ def backupToZip(folder):
     # Walk the intire folder tree and compress the files in each folder
     
     print('Done')
+    
+backupToZip('C:\\delicious')
