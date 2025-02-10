@@ -38,4 +38,5 @@ for amerFilename in os.listdir('.'):
     euroFilename = os.path.join(absWorkingDir, euroFilename)
 
     # Rename the Files
-    
+    print(f'Renaming "{amerFilename}" to "{euroFilename}"...')
+    shutil.move(amerFilename, euroFilename)    #
