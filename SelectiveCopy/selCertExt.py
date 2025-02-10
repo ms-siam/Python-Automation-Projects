@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 source = Path('C:\\Users\\Mobarok Siam\\Desktop')
-extension = '.jpg'
+extension = 'n'
 destination = (source / extension.lstrip('.'))
 destination.mkdir(exist_ok=True)
 
