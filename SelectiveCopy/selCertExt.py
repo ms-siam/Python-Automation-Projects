@@ -5,6 +5,8 @@
 import shutil, re, os
 
 # Walking through the folder tree
+source = Path('C:\\Users\\Mobarok Siam\\Desktop')
+
 def selandcopyfiles(source, destination, ext):
     
 
