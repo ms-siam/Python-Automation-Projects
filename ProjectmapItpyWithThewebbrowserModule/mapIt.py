@@ -3,4 +3,4 @@
 # from the command line or clipboard
 
 import webbrowser
-webbrowser.open('https://inventwithpython.com')
+
