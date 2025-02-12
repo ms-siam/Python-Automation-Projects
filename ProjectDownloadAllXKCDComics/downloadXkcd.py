@@ -31,4 +31,5 @@ while not url.endswith('#'):
         imageFile.close()
     
     #Get the Prev button's url
+    prevLink = soup.select('a[rel="prev"]')[0]
     
