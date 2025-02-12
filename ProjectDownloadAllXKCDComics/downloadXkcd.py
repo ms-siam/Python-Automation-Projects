@@ -32,4 +32,5 @@ while not url.endswith('#'):
     
     #Get the Prev button's url
     prevLink = soup.select('a[rel="prev"]')[0]
+    url = 'https://xkcd.com' + prevLink.get('href')
     
