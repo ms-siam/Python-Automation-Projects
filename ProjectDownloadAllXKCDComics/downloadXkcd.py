@@ -5,3 +5,5 @@ import requests, os, bs4
 
 url = 'https://xkcd.com'
 os.makedirs('xkcd', exist_ok=True)
+while not url.endswith('#'):
+    
