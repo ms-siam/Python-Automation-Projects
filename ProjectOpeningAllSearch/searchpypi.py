@@ -16,3 +16,6 @@ soup = bs4.BeautifulSoup(res.text, 'html.parser')
 linkElems = soup.select('.package-snippet')
 
 numOpen = min(5, len(linkElems))
+
+for i in range(numOpen):
+    
