@@ -9,4 +9,6 @@ res.raise_for_status()
 
 #Todo: Retrieve the top search results
 
+soup = bs4.BeautifulSoup(res.text, 'html.parser')
+
 #Todo: Open a browser tab for each results
