@@ -14,3 +14,5 @@ soup = bs4.BeautifulSoup(res.text, 'html.parser')
 #Todo: Open a browser tab for each results
 
 linkElems = soup.select('.package-snippet')
+
+numOpen = min(5, len(linkElems))
