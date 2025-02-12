@@ -15,7 +15,7 @@ soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
 linkElems = soup.select('.package-snippet')
 
-numOpen = min(5, len(linkElems))
+numOpen = min(5, len(linkElems))    #min() returns the smallest of the int or float arguments it is passed
 
 for i in range(numOpen):
     urlToOpen = 'https://pypi.org' + linkElems[i].get('href')
