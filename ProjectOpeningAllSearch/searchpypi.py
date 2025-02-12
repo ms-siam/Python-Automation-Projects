@@ -19,4 +19,5 @@ numOpen = min(5, len(linkElems))
 
 for i in range(numOpen):
     urlToOpen = 'https://pypi.org' + linkElems[i].get('href')
+    print('Opening ', urlToOpen)
     
