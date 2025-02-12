@@ -11,6 +11,8 @@ while not url.endswith('#'):
     res = requests.get(url)
     res.raise_for_status()
     
+    soup = bs4.BeautifulSoup(res.text, 'html.parser')
+    
     #Find the url of the comic image
     
     #Download the image
