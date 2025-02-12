@@ -12,3 +12,5 @@ res.raise_for_status()
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
 #Todo: Open a browser tab for each results
+
+linkElems = soup.select('.package-snippet')
