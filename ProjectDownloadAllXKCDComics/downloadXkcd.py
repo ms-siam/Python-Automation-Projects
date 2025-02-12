@@ -24,7 +24,8 @@ while not url.endswith('#'):
         res = requests.get(comicUrl)
         res.raise_for_status()
     
-    #Save the image to ./xkcd
+        #Save the image to ./xkcd
+        imageFile = open(os.path.join('xkcd', os.path.basename(comicUrl)), 'wb')
     
     #Get the Prev button's url
     
