@@ -9,3 +9,4 @@ browser.get('https://accounts.google.com/v3/signin/identifier?hl=en-gb&ifkv=ASSH
 userEmail = browser.find_element('id', 'identifierId')
 userEmail.send_keys('mobaroksiam46')
 nextElem = browser.find_element('id', 'identifierNext')
+nextElem.click()
