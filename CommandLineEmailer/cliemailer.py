@@ -31,6 +31,7 @@ passNextElem.click()
 browser = webdriver.Chrome()
 browser.get('https://mail.google.com/mail/u/0/')
 
+wait = WebDriverWait(browser, 10)  # Define wait
 
 composeButton = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[text()='Compose']")))
 composeButton.click()
