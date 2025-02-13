@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import pyinputplus as pyip
 from selenium.webdriver.common.keys import Keys
+import time
 
 
 browser = webdriver.Firefox()
@@ -37,3 +38,4 @@ messageBody = wait.until(EC.presence_of_element_located((By.XPATH, "//div[@role=
 messageBody.click()
 messageBody.send_keys(pyip.inputStr("Type your message for email. "))
 messageBody.send_keys(Keys.CONTROL, Keys.RETURN)
+
