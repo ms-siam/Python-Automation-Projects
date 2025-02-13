@@ -5,3 +5,4 @@
 from selenium import webdriver
 
 browser = webdriver.Firefox()
+browser.get('https://accounts.google.com/v3/signin/identifier?hl=en-gb&ifkv=ASSHykqVNSa7tl4sL8AOTvtuRy7Qxgf8--TGGsE1B8RoiNJDqwg6frneSJQRxfKkgOgot1ayFiqf&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S541183%3A1739431178159529&ddm=1')
