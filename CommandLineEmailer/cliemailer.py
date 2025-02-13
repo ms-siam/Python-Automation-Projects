@@ -14,4 +14,4 @@ userEmail.send_keys('mobaroksiam46')
 nextElem = browser.find_element('id', 'identifierNext')
 nextElem.click()
 wait = WebDriverWait(browser, 10)
-
+userPass = wait.until(EC.presence_of_element_located((By.NAME, "Passwd")))
