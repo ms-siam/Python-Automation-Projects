@@ -3,3 +3,5 @@
 # then login to email account and sends the email to the provided address
 
 from selenium import webdriver
+
+browser = webdriver.Firefox()
