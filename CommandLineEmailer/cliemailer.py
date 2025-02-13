@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import pyinputplus as pyip
+from selenium.webdriver.common.keys import Keys
 
 browser = webdriver.Firefox()
 browser.get('https://accounts.google.com/')
@@ -25,3 +26,4 @@ composeButton.click()
 
 reciepentElem = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id=':ty']")))
 reciepentElem.send_keys(pyip.inputEmail("Type reciepent's email address"))
+
