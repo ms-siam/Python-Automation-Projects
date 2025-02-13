@@ -29,6 +29,10 @@ passNextElem.click()
 '''
 #Using chrome browser , which is already logged in with a gmail
 
+# Set up Chrome options
+options = webdriver.ChromeOptions()
+options.add_argument("--disable-blink-features=AutomationControlled")  # Helps bypass bot detection
+
 browser = uc.Chrome()
 browser.get('https://mail.google.com/mail/u/0/')
 
