@@ -33,7 +33,7 @@ passNextElem.click()
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-blink-features=AutomationControlled")  # Helps bypass bot detection
 
-browser = uc.Chrome()
+browser = webdriver.Chrome(options=options)
 browser.get('https://mail.google.com/mail/u/0/')
 
 wait = WebDriverWait(browser, 10)  # Define wait
