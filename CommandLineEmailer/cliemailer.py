@@ -34,7 +34,6 @@ options = webdriver.ChromeOptions()
 options.add_argument("--disable-blink-features=AutomationControlled")  # Helps bypass bot detection
 
 browser = webdriver.Chrome(options=options)
-browser.get('https://mail.google.com/mail/u/0/')
 
 # Apply stealth settings
 stealth(browser,
@@ -45,6 +44,8 @@ stealth(browser,
     renderer="Intel Iris OpenGL Engine",
     fix_hairline=True,
 )
+
+browser.get('https://mail.google.com/mail/u/0/')
 
 wait = WebDriverWait(browser, 10)  # Define wait
 
