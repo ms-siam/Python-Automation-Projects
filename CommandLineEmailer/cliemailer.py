@@ -32,3 +32,5 @@ reciepentElem.send_keys(Keys.ENTER)
 subjectElem = wait.until(EC.presence_of_element_located((By.NAME, "subjectbox")))
 subjectElem.click()
 subjectElem.send_keys(pyip.inputStr("Type your email subject here. ")) 
+
+messageBody = wait.until(EC.presence_of_element_located((By.XPATH, "//div[@role='textbox' and @aria-label='Message Body']")))
