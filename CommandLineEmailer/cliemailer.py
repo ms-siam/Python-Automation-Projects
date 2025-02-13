@@ -20,5 +20,5 @@ userPass.send_keys(pyip.inputPassword('Type your gmail password here. '))
 passNextElem = browser.find_element('id', 'passwordNext')
 passNextElem.click()
 
-composeButton = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "T-I T-I-KE L3")))
+composeButton = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[text()='Compose']")))
 composeButton.click()
