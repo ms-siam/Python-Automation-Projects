@@ -9,7 +9,8 @@ from selenium.webdriver.common.by import By
 import pyinputplus as pyip
 from selenium.webdriver.common.keys import Keys
 import time
-
+'''
+# Google is blocking programmetically login 
 
 browser = webdriver.Firefox()
 browser.get('https://accounts.google.com/')
@@ -24,6 +25,10 @@ userPass = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@type='
 userPass.send_keys(pyip.inputPassword('Type your gmail password here. '))
 passNextElem = browser.find_element('id', 'passwordNext')
 passNextElem.click()
+'''
+
+
+
 
 composeButton = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[text()='Compose']")))
 composeButton.click()
