@@ -21,3 +21,4 @@ passNextElem = browser.find_element('id', 'passwordNext')
 passNextElem.click()
 
 composeButton = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "T-I T-I-KE L3")))
+composeButton.click()
