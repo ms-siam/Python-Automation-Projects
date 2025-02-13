@@ -2,6 +2,7 @@
 # cliEmailer.py- takes an email address and string of text , 
 # then login to email account and sends the email to the provided address
 
+from selenium_stealth import stealth
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
