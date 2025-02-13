@@ -28,3 +28,5 @@ composeButton.click()
 reciepentElem = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id=':ty']")))
 reciepentElem.send_keys(pyip.inputEmail("Type reciepent's email address"))
 reciepentElem.send_keys(Keys.ENTER)
+
+subjectElem = wait.until(EC.presence_of_element_located((By.NAME, "subjectbox")))
