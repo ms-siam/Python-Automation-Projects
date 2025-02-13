@@ -36,6 +36,16 @@ options.add_argument("--disable-blink-features=AutomationControlled")  # Helps b
 browser = webdriver.Chrome(options=options)
 browser.get('https://mail.google.com/mail/u/0/')
 
+# Apply stealth settings
+stealth(browser,
+    languages=["en-US", "en"],
+    vendor="Google Inc.",
+    platform="Win32",
+    webgl_vendor="Intel Inc.",
+    renderer="Intel Iris OpenGL Engine",
+    fix_hairline=True,
+)
+
 wait = WebDriverWait(browser, 10)  # Define wait
 
 composeButton = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[text()='Compose']")))
