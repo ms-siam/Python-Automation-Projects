@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+import pyinputplus as pyip
 
 browser = webdriver.Firefox()
 browser.get('https://accounts.google.com/')
@@ -15,3 +16,4 @@ nextElem = browser.find_element('id', 'identifierNext')
 nextElem.click()
 wait = WebDriverWait(browser, 10)
 userPass = wait.until(EC.presence_of_element_located((By.NAME, "Passwd")))
+
