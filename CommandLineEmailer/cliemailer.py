@@ -11,5 +11,5 @@ userEmail = browser.find_element('id', 'identifierId')
 userEmail.send_keys('mobaroksiam46')
 nextElem = browser.find_element('id', 'identifierNext')
 nextElem.click()
-
+wait = WebDriverWait(browser, 10)
 userPass = browser.find_element('id')
