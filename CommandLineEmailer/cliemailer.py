@@ -28,7 +28,7 @@ passNextElem.click()
 '''
 #Using chrome browser , which is already logged in with a gmail
 
-browser = webdriver.Chrome()
+browser = uc.Chrome()
 browser.get('https://mail.google.com/mail/u/0/')
 
 wait = WebDriverWait(browser, 10)  # Define wait
