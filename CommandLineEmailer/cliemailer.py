@@ -22,3 +22,6 @@ passNextElem.click()
 
 composeButton = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[text()='Compose']")))
 composeButton.click()
+
+reciepentElem = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id=':ty']")))
+
