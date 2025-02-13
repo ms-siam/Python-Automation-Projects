@@ -28,6 +28,8 @@ passNextElem.click()
 '''
 #Using chrome browser , which is already logged in with a gmail
 
+browser = webdriver.Chrome()
+
 
 
 composeButton = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[text()='Compose']")))
